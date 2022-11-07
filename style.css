@@ -5,26 +5,29 @@
   padding: 0;
 }
 
-#navbar,
-#navbar ul,
-#navbar li,
-#navbar a {
-  background-color: #515050;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  color: whitesmoke;
-  width: auto;
-  height: 7rem;
+#navbar {
   display: flex;
-  list-style: none;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
+  padding: 2rem 10%;
+  background-color: #515050;
+  color: whitesmoke;
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+}
+#navbar ul li a {
+  color: whitesmoke;
   text-decoration: none;
+  list-style: none;
+}
+#navbar ul li a:hover {
+  text-decoration: underline;
 }
 #navbar li {
-  margin-right: 1rem;
+  display: inline-block;
+  padding: 0 1rem;
 }
 
-#navbar li a:hover {
-  text-decoration: underline;
+.logo {
+  cursor: pointer;
 }
