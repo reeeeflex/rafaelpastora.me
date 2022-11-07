@@ -1,0 +1,34 @@
+* {
+  /* This is a website refresh in the universal code */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar,
+#navbar ul,
+#navbar li,
+#navbar a {
+  background-color: #515050;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  color: whitesmoke;
+  width: auto;
+  height: 7rem;
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+  text-decoration: none;
+}
+#navbar li {
+  margin-right: 1rem;
+}
+
+#navbar li a:hover {
+  text-decoration: underline;
+}
+
+.nav-links:first-child {
+  margin-right: auto;
+}
