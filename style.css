@@ -28,7 +28,3 @@
 #navbar li a:hover {
   text-decoration: underline;
 }
-
-.nav-links:first-child {
-  margin-right: auto;
-}
