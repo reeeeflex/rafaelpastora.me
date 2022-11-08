@@ -50,11 +50,27 @@ footer {
 
 .hero__container {
   background-color: var(--lightgrey);
-  height: 100vh;
+  height: 80vh;
   width: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 6rem 0;
-  justify-content: space-between;
+  margin: 4rem 0;
+  gap: 8rem;
+  justify-content: space-evenly;
+}
+
+.hero__container img {
+  height: 400px;
+  width: 500px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.hero__body {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10%;
+  padding: 4rem 4rem;
 }
