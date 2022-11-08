@@ -1,3 +1,10 @@
+:root {
+  --darkgrey: #515050;
+  --white: whitesmoke;
+  --hover: #cacccc;
+  --lightgrey: #d9d9d9;
+}
+
 * {
   /* This is a website refresh in the universal code */
   box-sizing: border-box;
@@ -10,24 +17,44 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 10%;
-  background-color: #515050;
-  color: whitesmoke;
+  background-color: var(--darkgrey);
+  color: var(--white);
   font-family: 'Bebas Neue', cursive;
   font-size: x-large;
 }
 #navbar ul li a {
-  color: whitesmoke;
+  color: var(--white);
   text-decoration: none;
   list-style: none;
 }
-#navbar ul li a:hover {
-  text-decoration: underline;
+#navbar ul li a {
+  /* transition effect */
+  transition: all 0.3 ease 0s;
 }
-#navbar li {
+#navbar ul li a:hover {
+  color: var(--hover);
+}
+#navbar ul li {
+  /* make li align horizontally after display flex */
   display: inline-block;
   padding: 0 1rem;
 }
 
 .logo {
   cursor: pointer;
+}
+section,
+footer {
+  padding: 0 10%;
+}
+
+.hero__container {
+  background-color: var(--lightgrey);
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 6rem 0;
+  justify-content: space-between;
 }
