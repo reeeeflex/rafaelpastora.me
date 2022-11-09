@@ -48,7 +48,7 @@ footer {
   padding: 0 10%;
 }
 
-.hero__container {
+section.hero__container {
   background-color: var(--lightgrey);
   height: 80vh;
   width: auto;
@@ -58,19 +58,58 @@ footer {
   margin: 4rem 0;
   gap: 8rem;
   justify-content: space-evenly;
+  font-family: 'Poppins', sans-serif;
 }
 
-.hero__container img {
+section.hero__container img {
   height: 400px;
   width: 500px;
   border-radius: 10%;
   object-fit: cover;
 }
 
-.hero__body {
+div.hero__body {
   height: 400px;
   width: 500px;
   background-color: white;
   border-radius: 10%;
   padding: 4rem 4rem;
+  overflow: hidden;
+}
+
+#skills {
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--lightgrey);
+  height: 35vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+div.container__skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+footer.footer {
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer.footer a {
+  color: var(--darkgrey);
+  text-decoration: none;
+}
+
+footer.footer a:hover {
+  text-decoration: underline;
 }
