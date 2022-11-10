@@ -131,7 +131,7 @@ footer.footer a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .logo {
     position: fixed;
     font-size: 1rem;
@@ -148,7 +148,7 @@ footer.footer a:hover {
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active .bar:nth-child(1) {
+  .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
@@ -162,6 +162,7 @@ footer.footer a:hover {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    height: 3rem;
   }
   li.nav__link {
     margin: 1rem 0;
@@ -169,5 +170,6 @@ footer.footer a:hover {
 
   ul.nav__links.active {
     left: 0;
+    height: 3rem;
   }
 }
