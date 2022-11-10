@@ -64,9 +64,6 @@ a:active {
   background-color: var(--white);
 }
 
-.logo {
-  cursor: pointer;
-}
 section,
 footer {
   padding: 0 10%;
