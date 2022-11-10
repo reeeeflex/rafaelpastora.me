@@ -67,7 +67,7 @@ footer {
 
 section.hero__container {
   background-color: var(--lightgrey);
-  height: 80vh;
+  height: 100vh;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -92,6 +92,7 @@ div.hero__body {
   border-radius: 10%;
   padding: 4rem 4rem;
   overflow: hidden;
+  height: fit-content;
 }
 
 #skills {
@@ -180,6 +181,10 @@ footer.footer a:hover {
     width: auto;
     padding: 5rem 0;
     justify-content: center;
+  }
+
+  section.hero__container img {
+    width: 100%;
   }
   div.hero__body {
     margin-top: 0 0;
