@@ -207,7 +207,7 @@ footer.footer a:hover {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   section.hero__container {
     display: flex;
     align-items: center;
