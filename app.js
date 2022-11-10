@@ -13,3 +13,8 @@ document.querySelectorAll('.nav__link').forEach(e =>
     navLinks.classList.remove('active');
   })
 );
+
+window.addEventListener('scroll', () => {
+  hamburger.classList.remove('active');
+  navLinks.classList.remove('active');
+});

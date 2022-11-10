@@ -177,6 +177,7 @@ footer.footer a:hover {
     align-items: center;
     flex-direction: column-reverse;
     height: auto;
+    width: auto;
     padding: 5rem 0;
     justify-content: center;
   }
