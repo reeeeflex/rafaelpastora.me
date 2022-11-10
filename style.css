@@ -40,6 +40,23 @@
   padding: 0 1rem;
 }
 
+/* no display on hamburger until called */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* creating hamburger bars */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white);
+}
+
 .logo {
   cursor: pointer;
 }
@@ -56,7 +73,7 @@ section.hero__container {
   flex-direction: row;
   align-items: center;
   margin: 4rem 0;
-  gap: 8rem;
+  gap: 7rem;
   justify-content: space-evenly;
   font-family: 'Poppins', sans-serif;
 }
@@ -112,4 +129,80 @@ footer.footer a {
 
 footer.footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 880px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  /* dissapears second bar */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  /* Rotates the 1st and last bar to create an X effect */
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  ul.nav__links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--darkgrey);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    height: 3rem;
+  }
+  li.nav__link {
+    margin: 1rem 0;
+  }
+
+  ul.nav__links.active {
+    left: 0;
+    height: 3rem;
+  }
+
+  section.hero__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 5rem 0;
+    justify-content: center;
+  }
+  div.hero__body {
+    margin-top: 0 0;
+  }
+
+  div.container__skills {
+    font-size: 1rem;
+  }
+  #skills h2 {
+    font-size: 1.5rem;
+  }
+  #skills {
+    height: auto;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  section.hero__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 5rem 0;
+    justify-content: center;
+  }
 }
