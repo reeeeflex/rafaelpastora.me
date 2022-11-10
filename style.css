@@ -40,6 +40,19 @@
   padding: 0 1rem;
 }
 
+/* no display on hamburger until called */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* creating hamburger bars */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+}
+
 .logo {
   cursor: pointer;
 }
@@ -112,4 +125,10 @@ footer.footer a {
 
 footer.footer a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar {
+    width: 844px;
+  }
 }
