@@ -107,6 +107,28 @@ div.hero__body {
   height: fit-content;
 }
 
+section.contact__container {
+  background-color: var(--lightgrey);
+  height: 50vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4rem 0;
+  gap: 7rem;
+  justify-content: space-evenly;
+  font-family: 'Poppins', sans-serif;
+}
+
+div.contact__body {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  padding: 2rem 2rem;
+  overflow: hidden;
+  height: fit-content;
+}
+
 #skills {
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
