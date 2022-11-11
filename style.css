@@ -126,6 +126,14 @@ div.contact__body {
   height: fit-content;
 }
 
+div.contact__links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 #skills {
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
