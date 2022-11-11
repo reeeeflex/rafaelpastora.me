@@ -12,6 +12,13 @@
   padding: 0;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -57,9 +64,6 @@
   background-color: var(--white);
 }
 
-.logo {
-  cursor: pointer;
-}
 section,
 footer {
   padding: 0 10%;
@@ -67,7 +71,7 @@ footer {
 
 section.hero__container {
   background-color: var(--lightgrey);
-  height: 80vh;
+  height: 100vh;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -76,6 +80,11 @@ section.hero__container {
   gap: 7rem;
   justify-content: space-evenly;
   font-family: 'Poppins', sans-serif;
+}
+
+#time {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 section.hero__container img {
@@ -92,6 +101,37 @@ div.hero__body {
   border-radius: 10%;
   padding: 4rem 4rem;
   overflow: hidden;
+  height: fit-content;
+}
+
+section.contact__container {
+  background-color: var(--lightgrey);
+  height: 50vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4rem 0;
+  gap: 7rem;
+  justify-content: space-evenly;
+  font-family: 'Poppins', sans-serif;
+}
+
+div.contact__body {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  padding: 2rem 2rem;
+  overflow: hidden;
+  height: fit-content;
+}
+
+div.contact__links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #skills {
@@ -181,6 +221,10 @@ footer.footer a:hover {
     padding: 5rem 0;
     justify-content: center;
   }
+
+  section.hero__container img {
+    width: 100%;
+  }
   div.hero__body {
     margin-top: 0 0;
   }
@@ -197,7 +241,7 @@ footer.footer a:hover {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   section.hero__container {
     display: flex;
     align-items: center;
