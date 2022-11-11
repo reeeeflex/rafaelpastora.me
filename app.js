@@ -45,7 +45,7 @@ function updateClock() {
   // set the content of the element with the ID time to the formatted string
   document.getElementById('time').innerHTML = [date, time].join(' - ');
 
-  // call this function again in 1000ms (every second)
+  // call this function again in 1000ms (every second) recurssion
   setTimeout(updateClock, 1000);
 }
 updateClock(); // initial call
